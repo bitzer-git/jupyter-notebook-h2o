@@ -7,7 +7,7 @@ LABEL author="Veit Droege"
 
 # any additional pip installs can be added by uncommenting the following line
 #RUN pip install scipy pandas scikit-learn numpy matplotlib plotly
-RUN pip install scikit-learn matplotlib numpy tensorflow tflite-runtime
+RUN pip install scikit-learn matplotlib numpy tensorflow==2.7.1 tflite-runtime
 
 # Just use keras as part of tensorflow
 RUN pip uninstall -y keras
